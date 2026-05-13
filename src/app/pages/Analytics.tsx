@@ -10,12 +10,12 @@ export default function Analytics() {
   const navigate = useNavigate();
 
   const categoryData = [
-    { name: "Alimentação", value: 1250, color: "#8b5cf6", percentage: 28 },
+    { name: "Alimentação", value: 1250, color: "#0d9488", percentage: 28 },
     { name: "Transporte", value: 680, color: "#06b6d4", percentage: 15 },
     { name: "Moradia", value: 1500, color: "#f59e0b", percentage: 34 },
     { name: "Entretenimento", value: 420, color: "#ec4899", percentage: 10 },
     { name: "Saúde", value: 350, color: "#10b981", percentage: 8 },
-    { name: "Outros", value: 225, color: "#6366f1", percentage: 5 },
+    { name: "Outros", value: 225, color: "#14b8a6", percentage: 5 },
   ];
 
   const monthlyData = [
@@ -55,10 +55,10 @@ export default function Analytics() {
 
         {/* Summary Cards */}
         <div className="grid grid-cols-3 gap-2">
-          <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
+          <Card className="bg-gradient-to-br from-teal-50 to-teal-100 border-teal-200">
             <CardContent className="p-3">
-              <p className="text-xs text-purple-700 mb-1">Gastos</p>
-              <p className="text-base font-bold text-purple-600">R$ {totalExpenses}</p>
+              <p className="text-xs text-teal-700 mb-1">Gastos</p>
+              <p className="text-base font-bold text-teal-600">R$ {totalExpenses}</p>
               <div className="flex items-center gap-1 mt-1">
                 <TrendingUp className="w-3 h-3 text-green-600" />
                 <span className="text-xs text-green-600">+15%</span>
@@ -227,10 +227,10 @@ export default function Analytics() {
                     <Line
                       type="monotone"
                       dataKey="gasto"
-                      stroke="#8b5cf6"
+                      stroke="#0d9488"
                       strokeWidth={3}
                       name="Gasto Diário"
-                      dot={{ fill: "#8b5cf6", r: 4 }}
+                      dot={{ fill: "#0d9488", r: 4 }}
                     />
                   </LineChart>
                 </ResponsiveContainer>
@@ -240,15 +240,15 @@ export default function Analytics() {
         </Tabs>
 
         {/* Insights */}
-        <Card className="mt-4 bg-gradient-to-br from-purple-50 to-blue-50 border-purple-200">
+        <Card className="mt-4 bg-gradient-to-br from-teal-50 to-blue-50 border-teal-200">
           <CardHeader className="pb-3">
-            <CardTitle className="text-base text-purple-900 flex items-center gap-2">
+            <CardTitle className="text-base text-teal-900 flex items-center gap-2">
               💡 Insights da IA
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
             <div className="flex items-start gap-2 p-3 bg-white rounded-lg">
-              <div className="w-1.5 h-1.5 bg-purple-600 rounded-full mt-2 flex-shrink-0" />
+              <div className="w-1.5 h-1.5 bg-teal-600 rounded-full mt-2 flex-shrink-0" />
               <p className="text-sm text-gray-700 leading-relaxed">
                 <span className="font-semibold">Alimentação:</span> Você gastou 15% a mais este mês.
                 A IA recomenda planejar refeições.

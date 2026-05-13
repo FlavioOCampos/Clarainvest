@@ -330,21 +330,21 @@ export default function ChatAI() {
       case "goal":
         return "bg-green-50 border-green-200 text-green-700";
       default:
-        return "bg-purple-50 border-purple-200 text-purple-700";
+        return "bg-teal-50 border-teal-200 text-teal-700";
     }
   };
 
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-600 to-purple-800 text-white p-4 shadow-lg">
+      <div className="bg-gradient-to-r from-teal-600 to-teal-800 text-white p-4 shadow-lg">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
             <Sparkles className="w-5 h-5" />
           </div>
           <div>
             <h1 className="font-bold text-lg">Clara IA</h1>
-            <p className="text-xs text-purple-100">Assistente Financeira</p>
+            <p className="text-xs text-teal-100">Assistente Financeira</p>
           </div>
         </div>
       </div>
@@ -358,7 +358,7 @@ export default function ChatAI() {
           >
             {message.sender === "ai" && (
               <Avatar className="w-8 h-8 mt-1 flex-shrink-0">
-                <AvatarFallback className="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-xs">
+                <AvatarFallback className="bg-gradient-to-br from-teal-600 to-teal-800 text-white text-xs">
                   <Sparkles className="w-4 h-4" />
                 </AvatarFallback>
               </Avatar>
@@ -368,7 +368,7 @@ export default function ChatAI() {
               <div
                 className={`inline-block max-w-[85%] rounded-2xl px-4 py-3 ${
                   message.sender === "user"
-                    ? "bg-purple-600 text-white"
+                    ? "bg-teal-600 text-white"
                     : "bg-white border border-gray-200 text-gray-900"
                 }`}
               >
@@ -420,7 +420,7 @@ export default function ChatAI() {
                       variant="outline"
                       size="sm"
                       onClick={() => handleSuggestionClick(suggestion)}
-                      className="bg-white border-purple-200 text-purple-700 hover:bg-purple-50 text-xs"
+                      className="bg-white border-teal-200 text-teal-700 hover:bg-teal-50 text-xs"
                     >
                       {suggestion}
                     </Button>
@@ -438,7 +438,7 @@ export default function ChatAI() {
 
             {message.sender === "user" && (
               <Avatar className="w-8 h-8 mt-1 flex-shrink-0">
-                <AvatarFallback className="bg-purple-100 text-purple-700 text-xs">
+                <AvatarFallback className="bg-teal-100 text-teal-700 text-xs">
                   MS
                 </AvatarFallback>
               </Avatar>
@@ -449,7 +449,7 @@ export default function ChatAI() {
         {isTyping && (
           <div className="flex gap-3">
             <Avatar className="w-8 h-8 flex-shrink-0">
-              <AvatarFallback className="bg-gradient-to-br from-purple-600 to-purple-800 text-white text-xs">
+              <AvatarFallback className="bg-gradient-to-br from-teal-600 to-teal-800 text-white text-xs">
                 <Sparkles className="w-4 h-4" />
               </AvatarFallback>
             </Avatar>
@@ -479,7 +479,7 @@ export default function ChatAI() {
           <Button
             onClick={handleSend}
             size="icon"
-            className="bg-purple-600 hover:bg-purple-700 flex-shrink-0"
+            className="bg-teal-600 hover:bg-teal-700 flex-shrink-0"
           >
             <Send className="w-4 h-4" />
           </Button>

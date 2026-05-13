@@ -23,12 +23,12 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="min-h-full bg-gradient-to-b from-purple-600 to-purple-800 pb-20">
+    <div className="min-h-full bg-gradient-to-b from-teal-600 to-teal-800 pb-20">
       {/* Header */}
       <div className="p-4 pt-6 text-white">
         <div className="flex items-center justify-between mb-6">
           <div>
-            <p className="text-purple-200 text-sm">Olá,</p>
+            <p className="text-teal-200 text-sm">Olá,</p>
             <h1 className="text-2xl font-bold">Maria Silva 👋</h1>
           </div>
           <Button
@@ -45,7 +45,7 @@ export default function Dashboard() {
         <Card className="bg-white/10 backdrop-blur-md border-white/20 text-white">
           <CardContent className="p-5">
             <div className="flex items-center justify-between mb-3">
-              <p className="text-sm text-purple-100">Saldo disponível</p>
+              <p className="text-sm text-teal-100">Saldo disponível</p>
               <Button
                 variant="ghost"
                 size="icon"
@@ -61,13 +61,13 @@ export default function Dashboard() {
 
             <div className="grid grid-cols-2 gap-3 mt-5 pt-4 border-t border-white/20">
               <div>
-                <p className="text-xs text-purple-200">Receitas</p>
+                <p className="text-xs text-teal-200">Receitas</p>
                 <p className="text-lg font-bold text-green-300">
                   +R$ {monthIncome.toLocaleString('pt-BR')}
                 </p>
               </div>
               <div>
-                <p className="text-xs text-purple-200">Despesas</p>
+                <p className="text-xs text-teal-200">Despesas</p>
                 <p className="text-lg font-bold text-red-300">
                   -R$ {monthExpense.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}
                 </p>
@@ -125,13 +125,13 @@ export default function Dashboard() {
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2">
                 <div
-                  className="bg-gradient-to-r from-purple-500 to-purple-700 h-2 rounded-full transition-all"
+                  className="bg-gradient-to-r from-teal-500 to-teal-700 h-2 rounded-full transition-all"
                   style={{ width: `${(creditUsed / creditLimit) * 100}%` }}
                 />
               </div>
               <div className="flex justify-between text-xs pt-1">
                 <span className="text-gray-500">Vencimento: 15/06</span>
-                <span className="font-semibold text-purple-600">{((creditUsed / creditLimit) * 100).toFixed(0)}% usado</span>
+                <span className="font-semibold text-teal-600">{((creditUsed / creditLimit) * 100).toFixed(0)}% usado</span>
               </div>
             </div>
           </CardContent>
@@ -142,10 +142,10 @@ export default function Dashboard() {
           <Button
             variant="outline"
             className="h-auto py-4 flex flex-col gap-2 bg-white"
-            onClick={() => navigate('/transactions')}
+            onClick={() => navigate('/payment')}
           >
-            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-              <ArrowUpRight className="w-5 h-5 text-purple-600" />
+            <div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+              <ArrowUpRight className="w-5 h-5 text-teal-600" />
             </div>
             <span className="text-xs font-medium">Transferir</span>
           </Button>
@@ -153,6 +153,7 @@ export default function Dashboard() {
           <Button
             variant="outline"
             className="h-auto py-4 flex flex-col gap-2 bg-white"
+            onClick={() => navigate('/receive')}
           >
             <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
               <ArrowDownLeft className="w-5 h-5 text-green-600" />
@@ -163,6 +164,7 @@ export default function Dashboard() {
           <Button
             variant="outline"
             className="h-auto py-4 flex flex-col gap-2 bg-white"
+            onClick={() => navigate('/payment')}
           >
             <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
               <span className="text-xl">💳</span>
@@ -178,7 +180,7 @@ export default function Dashboard() {
             <Button
               variant="ghost"
               size="sm"
-              className="text-purple-600 text-xs"
+              className="text-teal-600 text-xs"
               onClick={() => navigate('/transactions')}
             >
               Ver todas

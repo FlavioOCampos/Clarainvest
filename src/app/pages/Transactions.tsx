@@ -101,7 +101,7 @@ export default function Transactions() {
               onClick={() => setSelectedFilter(filter.id)}
               className={`flex-shrink-0 ${
                 selectedFilter === filter.id
-                  ? "bg-purple-600 hover:bg-purple-700"
+                  ? "bg-teal-600 hover:bg-teal-700"
                   : ""
               }`}
             >
