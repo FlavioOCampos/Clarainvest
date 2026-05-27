@@ -1,0 +1,242 @@
+📁 CLARA FINANCE - ESTRUTURA DE ARQUIVOS
+═══════════════════════════════════════════════════════════
+
+📦 /workspaces/default/code/
+│
+├── 📄 package.json                    # Dependências e scripts
+├── 📄 tsconfig.json                   # Config TypeScript
+├── 📄 vite.config.ts                  # Config Vite
+├── 📄 tailwind.config.js              # Config Tailwind CSS v4
+│
+├── 📚 DOCUMENTAÇÃO
+│   ├── 📄 ARCHITECTURE.md             # Estrutura macro detalhada
+│   ├── 📄 SYSTEM_OVERVIEW.md          # Visão geral e fluxos
+│   ├── 📄 EXECUTIVE_SUMMARY.md        # Resumo executivo
+│   └── 📄 PROJECT_STRUCTURE.txt       # Este arquivo
+│
+├── 📁 src/
+│   │
+│   ├── 📁 app/
+│   │   │
+│   │   ├── 📄 App.tsx                 # Componente raiz (RouterProvider)
+│   │   ├── 📄 routes.tsx              # Configuração de rotas
+│   │   │
+│   │   ├── 📁 pages/                  # 🎯 7 PÁGINAS PRINCIPAIS
+│   │   │   ├── 📄 Dashboard.tsx       # Tela inicial com saldo e alertas
+│   │   │   ├── 📄 ChatAI.tsx          # Chat com IA financeira
+│   │   │   ├── 📄 Transactions.tsx    # Lista de transações
+│   │   │   ├── 📄 Analytics.tsx       # Gráficos e análises
+│   │   │   ├── 📄 Profile.tsx         # Perfil e 6 seções de config
+│   │   │   ├── 📄 Payment.tsx         # Tela de pagamento (PIX/TED/Boleto)
+│   │   │   └── 📄 Receive.tsx         # Recebimento com QR Code
+│   │   │
+│   │   └── 📁 components/             # Componentes reutilizáveis
+│   │       │
+│   │       ├── 📄 Layout.tsx          # Layout com bottom nav
+│   │       │
+│   │       ├── 📁 ui/                 # 🎨 40+ COMPONENTES SHADCN UI
+│   │       │   ├── 📄 button.tsx
+│   │       │   ├── 📄 card.tsx
+│   │       │   ├── 📄 input.tsx
+│   │       │   ├── 📄 label.tsx
+│   │       │   ├── 📄 avatar.tsx
+│   │       │   ├── 📄 badge.tsx
+│   │       │   ├── 📄 tabs.tsx
+│   │       │   ├── 📄 switch.tsx
+│   │       │   ├── 📄 separator.tsx
+│   │       │   ├── 📄 progress.tsx
+│   │       │   ├── 📄 dialog.tsx
+│   │       │   ├── 📄 sheet.tsx
+│   │       │   ├── 📄 popover.tsx
+│   │       │   ├── 📄 tooltip.tsx
+│   │       │   ├── 📄 select.tsx
+│   │       │   ├── 📄 dropdown-menu.tsx
+│   │       │   ├── 📄 navigation-menu.tsx
+│   │       │   ├── 📄 alert.tsx
+│   │       │   ├── 📄 toast.tsx
+│   │       │   ├── 📄 skeleton.tsx
+│   │       │   ├── 📄 scroll-area.tsx
+│   │       │   ├── 📄 checkbox.tsx
+│   │       │   ├── 📄 radio-group.tsx
+│   │       │   ├── 📄 slider.tsx
+│   │       │   ├── 📄 calendar.tsx
+│   │       │   ├── 📄 form.tsx
+│   │       │   ├── 📄 table.tsx
+│   │       │   ├── 📄 accordion.tsx
+│   │       │   ├── 📄 collapsible.tsx
+│   │       │   ├── 📄 command.tsx
+│   │       │   ├── 📄 context-menu.tsx
+│   │       │   ├── 📄 hover-card.tsx
+│   │       │   ├── 📄 menubar.tsx
+│   │       │   ├── 📄 pagination.tsx
+│   │       │   ├── 📄 resizable.tsx
+│   │       │   ├── 📄 toggle.tsx
+│   │       │   ├── 📄 toggle-group.tsx
+│   │       │   ├── 📄 alert-dialog.tsx
+│   │       │   ├── 📄 aspect-ratio.tsx
+│   │       │   ├── 📄 breadcrumb.tsx
+│   │       │   ├── 📄 carousel.tsx
+│   │       │   ├── 📄 chart.tsx
+│   │       │   ├── 📄 drawer.tsx
+│   │       │   ├── 📄 input-otp.tsx
+│   │       │   ├── 📄 sidebar.tsx
+│   │       │   ├── 📄 sonner.tsx
+│   │       │   ├── 📄 textarea.tsx
+│   │       │   ├── 📄 use-mobile.ts
+│   │       │   └── 📄 utils.ts
+│   │       │
+│   │       └── 📁 figma/
+│   │           └── 📄 ImageWithFallback.tsx
+│   │
+│   ├── 📁 styles/
+│   │   ├── 📄 theme.css              # Temas e tokens de design
+│   │   ├── 📄 fonts.css              # Importação de fontes
+│   │   └── 📄 globals.css            # Estilos globais
+│   │
+│   └── 📁 imports/                   # Assets (imagens, SVGs)
+│       └── 📄 69e4299d-7202-45ad-a78a-f4aa7e5c0209.png
+│
+└── 📁 node_modules/                  # Dependências (não versionado)
+
+
+═══════════════════════════════════════════════════════════
+📊 ESTATÍSTICAS DO PROJETO
+═══════════════════════════════════════════════════════════
+
+📄 Páginas Principais:           7
+🎨 Componentes UI:               40+
+🔗 Rotas Configuradas:           7
+📦 Dependências NPM:             60+
+💾 Linhas de Código (aprox):     ~5.000
+⚡ Funcionalidades:              25+
+
+═══════════════════════════════════════════════════════════
+🎯 PÁGINAS E SEUS ARQUIVOS
+═══════════════════════════════════════════════════════════
+
+1. 🏠 DASHBOARD (/src/app/pages/Dashboard.tsx)
+   └─ Saldo, alertas IA, cartões, transações recentes
+   └─ Ações rápidas (Transferir, Receber, Pagar)
+
+2. 🤖 CHAT IA (/src/app/pages/ChatAI.tsx)
+   └─ Conversa com assistente financeiro
+   └─ Análise de dificuldades, sugestões, planos
+
+3. 📊 TRANSAÇÕES (/src/app/pages/Transactions.tsx)
+   └─ Lista completa de transações
+   └─ Filtros, busca, categorização
+
+4. 📈 ANÁLISES (/src/app/pages/Analytics.tsx)
+   └─ Gráficos: Pizza, Barras, Linha
+   └─ Insights da IA, tendências
+
+5. 👤 PERFIL (/src/app/pages/Profile.tsx)
+   └─ 6 seções: Pessoal, Cartões, Segurança,
+      Notificações, Aparência, Configurações
+
+6. 💸 PAGAMENTO (/src/app/pages/Payment.tsx)
+   └─ PIX, TED/DOC, Boleto
+   └─ Validação, confirmação, comprovante
+
+7. 💰 RECEBIMENTO (/src/app/pages/Receive.tsx)
+   └─ QR Code PIX, 4 chaves
+   └─ Copiar, compartilhar
+
+═══════════════════════════════════════════════════════════
+🎨 DESIGN SYSTEM
+═══════════════════════════════════════════════════════════
+
+COR PRINCIPAL:   Verde Petróleo (Teal #0d9488)
+FRAMEWORK CSS:   Tailwind CSS v4.1.12
+COMPONENTES:     Shadcn UI (Radix UI)
+ÍCONES:          Lucide React
+GRÁFICOS:        Recharts 2.15.2
+ANIMAÇÕES:       Motion 12.23.24
+
+═══════════════════════════════════════════════════════════
+🛠️ TECNOLOGIAS
+═══════════════════════════════════════════════════════════
+
+FRONTEND:
+  ├─ React 18.3.1
+  ├─ TypeScript
+  ├─ React Router 7.13.0
+  └─ Vite 6.3.5
+
+FORMULÁRIOS:
+  └─ React Hook Form 7.55.0
+
+UTILIDADES:
+  ├─ date-fns 3.6.0
+  ├─ clsx 2.1.1
+  └─ tailwind-merge 3.2.0
+
+UI PRIMITIVES:
+  ├─ @radix-ui/* (15+ pacotes)
+  └─ shadcn/ui custom
+
+═══════════════════════════════════════════════════════════
+📱 NAVEGAÇÃO (Bottom Nav)
+═══════════════════════════════════════════════════════════
+
+┌─────┬─────┬─────┬─────┬─────┐
+│  🏠 │ 🤖  │ 📊  │ 📈  │ 👤  │
+│Início│ IA │Gastos│Análises│Perfil│
+└─────┴─────┴─────┴─────┴─────┘
+  /     /chat  /trans  /analy  /profile
+
+ROTAS ADICIONAIS (sem nav):
+  /payment   - Tela de pagamento
+  /receive   - Tela de recebimento
+
+═══════════════════════════════════════════════════════════
+🔑 RECURSOS PRINCIPAIS
+═══════════════════════════════════════════════════════════
+
+✅ Mobile-First Design (iPhone otimizado - 430px)
+✅ 7 Telas Completas e Funcionais
+✅ Chat IA com Cenário de Dificuldade Financeira
+✅ 3 Tipos de Gráficos Interativos (Recharts)
+✅ 3 Métodos de Pagamento (PIX, TED, Boleto)
+✅ 4 Chaves PIX Cadastradas + QR Code
+✅ 6 Seções no Perfil (totalmente organizadas)
+✅ Navegação com React Router v7
+✅ 40+ Componentes UI Reutilizáveis
+✅ Tema Verde Petróleo Aplicado Globalmente
+✅ Validações de Formulário
+✅ Estados Dinâmicos (show/hide, filtros, busca)
+✅ Animações e Transições Suaves
+✅ Safe Area para iPhone (notch)
+✅ Responsive Design
+
+═══════════════════════════════════════════════════════════
+📈 PRÓXIMOS PASSOS
+═══════════════════════════════════════════════════════════
+
+FASE 2 - Backend:
+  ├─ API REST (Node.js + Express)
+  ├─ PostgreSQL Database
+  ├─ JWT Authentication
+  ├─ OpenAI Integration (IA real)
+  └─ Integração Bancária (Plaid/Belvo)
+
+FASE 3 - Features Avançadas:
+  ├─ Notificações Push
+  ├─ Exportar PDF
+  ├─ Metas com Gamificação
+  └─ Investimentos
+
+FASE 4 - Escala:
+  ├─ React Native (iOS/Android)
+  ├─ Web Desktop Version
+  └─ Multi-idiomas
+
+═══════════════════════════════════════════════════════════
+
+🎉 PROJETO COMPLETO E FUNCIONAL!
+
+Versão: 2.5.0 MVP
+Status: ✅ Protótipo Funcional
+Última Atualização: Maio 2026
+
+═══════════════════════════════════════════════════════════
