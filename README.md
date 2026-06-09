@@ -1,3 +1,13 @@
+
+# Clarainvest
+
+Projeto Final – Interface e Jornada do Usuário
+
+Alunos: Flávio de Oliveira Campos, Guilherme, Luan
+Instituição: UDF
+
+
+
 # 💚 Clara Finance - Assistente Financeiro com IA
 
 > *Seu mentor financeiro pessoal no bolso*
