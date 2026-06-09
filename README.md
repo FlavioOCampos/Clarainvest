@@ -28,7 +28,7 @@ Protótipo Navegável
 
 Acesse o protótipo pelo link abaixo:
 
-🔗 https://www.figma.com/make/H0coufTNUNYbstWJ30ViNt/clarainvest?p=f&t=1dkJSxjS0i8iSdKV-0
+🔗https://www.figma.com/make/H0coufTNUNYbstWJ30ViNt/clarainvest?code-node-id=0-9&p=f&t=ao40TjiK3SGHSuAB-0&fullscreen=1
 
 Repositório do Projeto
 
