@@ -28,7 +28,7 @@
 
 🎥 Assista ao vídeo da apresentação:
 
-[COLE_AQUI_O_LINK_DO_DRIVE](https://drive.google.com/file/d/1mJYleVppS-SiaUC3lp7ap0GWJ7YaNFGB/view?usp=drive_link)
+(https://drive.google.com/file/d/1mJYleVppS-SiaUC3lp7ap0GWJ7YaNFGB/view?usp=drive_link)
 
 ---
 
