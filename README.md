@@ -24,6 +24,18 @@
 
 ---
 
+Protótipo Navegável
+
+Acesse o protótipo pelo link abaixo:
+
+🔗 https://www.figma.com/make/H0coufTNUNYbstWJ30ViNt/clarainvest?p=f&t=1dkJSxjS0i8iSdKV-0
+
+Repositório do Projeto
+
+🔗 https://github.com/FlavioOCampos/Clarainvest
+
+---
+
 ## 🚀 Funcionalidades Principais
 
 ### 1. 🏠 Dashboard Inteligente
